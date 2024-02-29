@@ -1,8 +1,6 @@
-rootProject.name = 'multi-module'
+rootProject.name = 'newsfeed'
 include 'user-service'
 include 'activity-service'
 include 'newsfeed-service'
 include 'service-discovery'
 include 'api-gateway'
-include 'product-service'
-
