@@ -4,5 +4,3 @@ include 'activity-service'
 include 'newsfeed-service'
 include 'service-discovery'
 include 'api-gateway'
-include 'product-service'
-
