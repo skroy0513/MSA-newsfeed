@@ -42,7 +42,7 @@ public class PostController {
         return ResponseEntity.ok().body(post);
     }
 
-    @PostMapping("/modify")
+    @PutMapping("/modify")
     public ResponseEntity<PostDto> modifyPost(@RequestHeader HttpHeaders headers,
                                               @RequestBody @Valid PostDto postdto) {
         Long userId = Long.valueOf(headers.get("userId").get(0));
@@ -59,7 +59,7 @@ public class PostController {
         return ResponseEntity.ok().body(cmtDto);
     }
 
-    @PostMapping("/{postId}/cmt/modify")
+    @PutMapping("/{postId}/cmt/modify")
     public ResponseEntity<CommentDto> modifyComment(@RequestHeader HttpHeaders headers,
                                                     @RequestParam("content") String content,
                                                     @RequestParam("cmtId") Long cmtId,
@@ -103,7 +103,7 @@ public class PostController {
         return ResponseEntity.ok(result);
     }
 
-    @PostMapping("/{cmtId}/cmt-thumbs-down")
+    @DeleteMapping("/{cmtId}/cmt-thumbs-down")
     public ResponseEntity<String> thumbsDownCmt(@RequestHeader HttpHeaders headers,
                                                 @RequestParam("cmtThumbsId") Long cmtThumbsId,
                                                 @PathVariable Long cmtId) {
