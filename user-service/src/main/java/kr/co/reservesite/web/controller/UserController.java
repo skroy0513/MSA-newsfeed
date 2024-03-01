@@ -35,9 +35,6 @@ public class UserController {
     public String home(@RequestHeader HttpHeaders headers) {
         String Auths = headers.get("Auth").get(0);
         String userId = headers.get("userId").get(0);
-//        String token = headers.get("Authorization").get(0).substring(7);
-
-//        return "hello world, " + Auths + "," + userId + ", token : " + token;
         return "hello world, " + Auths + "," + userId;
     }
 
@@ -70,7 +67,7 @@ public class UserController {
         return ResponseEntity.ok(result);
     }
 
-    @PostMapping("/change-password")
+    @PutMapping("/change-password")
     public ResponseEntity<String> changePw(@RequestHeader HttpHeaders headers,
                                            @RequestBody ChangePasswordDto changePasswordDto) {
         String bearerToken = headers.get("Authorization").get(0);
@@ -79,7 +76,7 @@ public class UserController {
         return ResponseEntity.ok().body(result);
     }
 
-    @PostMapping("/change-profile")
+    @PutMapping("/change-profile")
     public ResponseEntity<UserProfileForm> changeProfile(@RequestHeader HttpHeaders headers,
                                                          @RequestBody UserProfileForm userProfileDto) {
         Long userId = Long.valueOf(headers.get("userId").get(0));
