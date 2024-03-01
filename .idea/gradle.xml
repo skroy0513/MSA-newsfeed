@@ -12,7 +12,6 @@
             <option value="$PROJECT_DIR$/activity-service" />
             <option value="$PROJECT_DIR$/api-gateway" />
             <option value="$PROJECT_DIR$/newsfeed-service" />
-            <option value="$PROJECT_DIR$/product-service" />
             <option value="$PROJECT_DIR$/service-discovery" />
             <option value="$PROJECT_DIR$/user-service" />
           </set>
