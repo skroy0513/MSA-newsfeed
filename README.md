@@ -45,7 +45,8 @@
 </div>
 </details>
 
-## [트러블슈팅](트러블슈팅 링크 넣기)
+## 트러블슈팅
+[![Tistory's Card] "트러블슈팅 작성한 링크 첨부하기" (https://github-readme-tistory-card.vercel.app/api?name=skroy0513&postId=)](https://github.com/loosie/github-readme-tistory-card)
 - 이메일 인증
 - api-gateway, JWT-Token
 - RefreshToken을 통한 AccessToken재발급
