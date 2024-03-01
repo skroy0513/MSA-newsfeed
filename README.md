@@ -34,12 +34,6 @@
 - 내가 팔로우한 사람들의 소식 받기
 - 내 게시글에 대한 소식 받기(댓글, 좋아요)
 
-## [트러블슈팅](트러블슈팅 링크 넣기)
-- 이메일 인증
-- api-gateway, JWT-Token
-- RefreshToken을 통한 AccessToken재발급
-
-## API 명세
 <details>
 <summary>API 보기</summary>
 <div markdown="1">
@@ -50,3 +44,8 @@
 
 </div>
 </details>
+
+## [트러블슈팅](트러블슈팅 링크 넣기)
+- 이메일 인증
+- api-gateway, JWT-Token
+- RefreshToken을 통한 AccessToken재발급
