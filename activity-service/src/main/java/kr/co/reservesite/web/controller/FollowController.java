@@ -37,7 +37,7 @@ public class FollowController {
     }
 
     //나를 팔로우하고 있는 유저목록
-    @GetMapping("/show-follower")
+    @GetMapping("/follower")
     public ResponseEntity<List<Follow>> showMyFollower(@RequestHeader HttpHeaders headers) {
         Long userId = Long.valueOf(headers.get("userId").get(0));
         List<Follow> follower = followService.showMyFollower(userId);
@@ -46,7 +46,7 @@ public class FollowController {
     }
 
     //내가 팔로우하고 있는 유저목록
-    @GetMapping("/show-following")
+    @GetMapping("/following")
     public ResponseEntity<List<Follow>> showMyFollowing(@RequestHeader HttpHeaders headers) {
         Long userId = Long.valueOf(headers.get("userId").get(0));
         List<Follow> follower = followService.showMyFollowing(userId);
