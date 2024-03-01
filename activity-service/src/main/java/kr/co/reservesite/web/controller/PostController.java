@@ -26,7 +26,7 @@ public class PostController {
         return ResponseEntity.ok().body(postDto);
     }
 
-    @GetMapping("/my")
+    @GetMapping("/my-posts")
     public ResponseEntity<Page<PostDto>> myFollowerPost(@RequestParam("page") int page,
                                                         @RequestHeader HttpHeaders headers) {
         Long userId = Long.valueOf(headers.get("userId").get(0));
@@ -50,18 +50,18 @@ public class PostController {
         return ResponseEntity.ok().body(post);
     }
 
-    @PostMapping("/{postId}/cmt/create")
+    @PostMapping("/{postId}/cmt")
     public ResponseEntity<CommentDto> createComment(@RequestHeader HttpHeaders headers,
-                                                    @RequestParam("content") String content,
+                                                    @RequestBody String content,
                                                     @PathVariable Long postId) {
         Long userId = Long.valueOf(headers.get("userId").get(0));
         CommentDto cmtDto = postService.createCmt(userId, content, postId);
         return ResponseEntity.ok().body(cmtDto);
     }
 
-    @PutMapping("/{postId}/cmt/modify")
+    @PutMapping("/{postId}/cmt")
     public ResponseEntity<CommentDto> modifyComment(@RequestHeader HttpHeaders headers,
-                                                    @RequestParam("content") String content,
+                                                    @RequestBody String content,
                                                     @RequestParam("cmtId") Long cmtId,
                                                     @PathVariable Long postId) {
         Long userId = Long.valueOf(headers.get("userId").get(0));
@@ -69,7 +69,7 @@ public class PostController {
         return ResponseEntity.ok(cmtDto);
     }
 
-    @DeleteMapping("/{postId}/cmt/delete")
+    @DeleteMapping("/{postId}/cmt")
     public ResponseEntity<String> deleteComment(@RequestHeader HttpHeaders headers,
                                                 @RequestParam("cmtId") Long cmtId,
                                                 @PathVariable Long postId) {
