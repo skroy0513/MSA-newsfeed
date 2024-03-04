@@ -48,13 +48,13 @@
 ## 트러블슈팅
 - 이메일 인증
 
-[![Tistory's Card](https://github-readme-tistory-card.vercel.app/api?name=skroy0513&postId=15)](https://github.com/loosie/github-readme-tistory-card)
+[![Tistory's Card](https://github-readme-tistory-card.vercel.app/api?name=skroy0513&postId=15)](https://skroy0513.tistory.com/15)
   
 - api-gateway, JWT-Token
 
-[![Tistory's Card](https://github-readme-tistory-card.vercel.app/api?name=skroy0513&postId=16)](https://github.com/loosie/github-readme-tistory-card)
+[![Tistory's Card](https://github-readme-tistory-card.vercel.app/api?name=skroy0513&postId=16)](https://skroy0513.tistory.com/16)
  
 - RefreshToken을 통한 AccessToken재발급
 
-[![Tistory's Card](https://github-readme-tistory-card.vercel.app/api?name=skroy0513&postId=17)](https://github.com/loosie/github-readme-tistory-card)
+[![Tistory's Card](https://github-readme-tistory-card.vercel.app/api?name=skroy0513&postId=17)](https://skroy0513.tistory.com/17)
 
