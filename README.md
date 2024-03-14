@@ -46,12 +46,9 @@
 </details>
 
 ## 트러블슈팅
-- 이메일 인증   
-[해당 트러블 슈팅 내용 링크](https://skroy0513.tistory.com/15)
+- [이메일 인증](https://skroy0513.tistory.com/15)
   
-- api-gateway, JWT-Token   
-[해당 트러블 슈팅 내용 링크](https://skroy0513.tistory.com/16)
+- [api-gateway, JWT-Token](https://skroy0513.tistory.com/16)
  
-- RefreshToken을 통한 AccessToken재발급   
-[해당 트러블 슈팅 내용 링크](https://skroy0513.tistory.com/17)
+- [RefreshToken을 통한 AccessToken재발급](https://skroy0513.tistory.com/17)
 
