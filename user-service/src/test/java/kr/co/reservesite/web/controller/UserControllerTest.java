@@ -57,10 +57,6 @@ class UserControllerTest {
     }
 
     @Test
-    void confirm() {
-    }
-
-    @Test
     @DisplayName("로그인 테스트")
     void login() throws Exception {
         //given
@@ -78,21 +74,5 @@ class UserControllerTest {
         resultActions.andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andDo(print());
-    }
-
-    @Test
-    void logout() {
-    }
-
-    @Test
-    void changePw() {
-    }
-
-    @Test
-    void changeProfile() {
-    }
-
-    @Test
-    void getNickname() {
     }
 }
