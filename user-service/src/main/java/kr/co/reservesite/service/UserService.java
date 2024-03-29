@@ -95,7 +95,6 @@ public class UserService {
         return TokenInfoDto.builder()
                 .grantType("Bearer")
                 .accessToken(accessToken)
-                .refreshToken(refreshToken)
                 .build();
     }
 
