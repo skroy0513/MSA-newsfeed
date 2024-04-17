@@ -17,7 +17,4 @@ public class TokenInfoDto {
 
     @NotNull
     private String accessToken;
-
-    @NotNull
-    private String refreshToken;
 }

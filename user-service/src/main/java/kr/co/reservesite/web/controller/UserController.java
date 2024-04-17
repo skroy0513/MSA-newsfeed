@@ -33,9 +33,10 @@ public class UserController {
 
     @GetMapping("/")
     public String home(@RequestHeader HttpHeaders headers) {
-        String Auths = headers.get("Auth").get(0);
-        String userId = headers.get("userId").get(0);
-        return "hello world, " + Auths + "," + userId;
+//        String Auths = headers.get("Auth").get(0);
+//        String userId = headers.get("userId").get(0);
+//        return "hello world, " + Auths + "," + userId;
+        return "hello world";
     }
 
     @PostMapping("/register")
